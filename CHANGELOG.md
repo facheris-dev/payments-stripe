@@ -1,5 +1,11 @@
 # @facheris-dev/payments-stripe
 
+## 0.2.1
+
+### Patch Changes
+
+- Public
+
 ## 0.2.0
 
 ### Minor Changes
