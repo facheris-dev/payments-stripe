@@ -1,0 +1,19 @@
+{
+    "name": "@facheris-dev/payments-stripe",
+    "version": "0.0.1",
+    "description": "A wrapper around the StripeJS library.",
+    "license": "MIT",
+    "private": "false",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsup src/index.ts --format cjs,esm --dts",
+        "lint": "tsc"
+    },
+    "devDependencies": {
+        "@changesets/cli": "^2.27.1",
+        "tsup": "^8.0.2",
+        "typescript": "^5.4.3"
+    }
+}
