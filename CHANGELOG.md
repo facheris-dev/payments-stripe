@@ -1,5 +1,11 @@
 # @facheris-dev/payments-stripe
 
+## 0.4.2
+
+### Patch Changes
+
+- 90db19e: Added Stripe as peer dependency.
+
 ## 0.4.1
 
 ### Patch Changes
