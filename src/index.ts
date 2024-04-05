@@ -5,25 +5,28 @@ import {
     createEvent
 } from './webhook';
 
+import {
+    createEndpointFactory
+} from './endpoint'
+
 type Params = {
-    webhookSecret: string,
-    apiKey: string,
-    config?: Stripe.StripeConfig
-}
+    stripe: Stripe,
+    webhookSecret: string;
+};
 
 export default ({
-    webhookSecret,
-    apiKey,
-    config
+    stripe,
+    webhookSecret
 }: Params) => {
-    const stripe =
-        new Stripe(
-            apiKey,
-            config
-        );
+    const {
+        createEndpoint
+    } = createEndpointFactory({
+        stripe: stripe
+    });
 
     return {
+        createEndpoint: createEndpoint,
         createEvent: createEvent,
-        createWebhook: createWebhook(stripe, webhookSecret)
+        createWebhook: createWebhook(stripe, webhookSecret),
     }
 };

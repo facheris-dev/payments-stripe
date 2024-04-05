@@ -2,12 +2,14 @@ import { describe, it, expect } from 'vitest';
 
 import factory from '../index';
 
+import Stripe from 'stripe';
+
 const {
     createWebhook,
     createEvent
 } = factory({
+    stripe: new Stripe(''),
     webhookSecret: 'sk_webhook',
-    apiKey: 'sk_test'
 })
 
 describe('Stripe create webhook tests', () => {
