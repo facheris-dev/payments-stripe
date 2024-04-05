@@ -1,6 +1,6 @@
 {
     "name": "@facheris-dev/payments-stripe",
-    "version": "0.4.3",
+    "version": "0.4.4",
     "description": "A wrapper around the StripeJS library.",
     "license": "MIT",
     "private": false,

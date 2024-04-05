@@ -1,5 +1,11 @@
 # @facheris-dev/payments-stripe
 
+## 0.4.4
+
+### Patch Changes
+
+- dbd27ca: Feats: Endpoint creation
+
 ## 0.4.3
 
 ### Patch Changes
