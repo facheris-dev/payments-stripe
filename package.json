@@ -1,6 +1,6 @@
 {
     "name": "@facheris-dev/payments-stripe",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "description": "A wrapper around the StripeJS library.",
     "license": "MIT",
     "private": false,
@@ -13,6 +13,9 @@
         "lint": "tsc",
         "publish:package": "pnpm run lint && pnpm run test && pnpm run build && changeset publish",
         "test": "vitest run"
+    },
+    "peerDependencies": {
+        "stripe": "^14.23.0"
     },
     "devDependencies": {
         "@changesets/cli": "^2.27.1",
