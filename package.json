@@ -1,6 +1,6 @@
 {
     "name": "@facheris-dev/payments-stripe",
-    "version": "0.2.2",
+    "version": "0.3.0",
     "description": "A wrapper around the StripeJS library.",
     "license": "MIT",
     "private": false,
@@ -9,13 +9,17 @@
     "types": "dist/index.d.ts",
     "scripts": {
         "build": "tsup src/index.ts --format cjs,esm --dts",
-        "dev": "tsc --watch",
+        "dev": "vitest",
         "lint": "tsc",
-        "publish:package": "pnpm run lint && pnpm run build && changeset publish"
+        "publish:package": "pnpm run lint && pnpm run test && pnpm run build && changeset publish",
+        "test": "vitest run"
     },
     "devDependencies": {
         "@changesets/cli": "^2.27.1",
+        "@types/node": "^20",
+        "stripe": "^14.23.0",
         "tsup": "^8.0.2",
-        "typescript": "^5.4.3"
+        "typescript": "^5.4.3",
+        "vitest": "^1.4.0"
     }
 }
