@@ -1,5 +1,11 @@
 # @facheris-dev/payments-stripe
 
+## 0.4.0
+
+### Minor Changes
+
+- 8e3d7f5: Webhook events
+
 ## 0.3.0
 
 ### Minor Changes
